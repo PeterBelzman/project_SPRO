@@ -1,0 +1,47 @@
+
+html,
+body {
+  //min-height: 100%;
+  //background-color: transparent;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: HelveticaNeueCyrLight, sans-serif;
+}
+
+body {
+  //min-height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+a {
+  &:link {
+    text-decoration: none;
+    color: $white;
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover {
+    color: $blue;
+  }
+  //&:visited {
+  //
+  //}
+  //&:active {
+  //
+  //}
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}

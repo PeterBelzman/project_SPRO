@@ -1,0 +1,308 @@
+.study {
+  width: 100%;
+  //height: 680px;
+  height: auto;
+  position: relative;
+  //background-color: $light-grey;
+
+  .study_wraper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    background: url("../img/forwho_bg.png") top center no-repeat $light-grey;
+
+    .study_title {
+      width: 570px;
+      height: 70px;
+      border: 3px solid $white;
+      margin: 95px auto 0;
+      //margin: 0 auto;
+      .study_title_p {
+        text-align: center;
+        position: relative;
+        width: 570px;
+        height: 70px;
+        color: $grey;
+        line-height: 75px;
+        letter-spacing: 2px;
+        font-family: 'HelveticaNeueCyrRoman', sans-serif;
+        font-size: 22px;
+        text-transform: uppercase;
+        &:after {
+          content: "";
+          position: absolute;
+          left: -3px;
+          top: -3px;
+          width: 50%;
+          height: 100%;
+          background-color: transparent;
+          border: 3px solid $light-blue;
+          border-right: none;
+          z-index: 2;
+        }
+      }
+    }
+
+    .study_row {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 70px auto 115px;
+
+      .study_block {
+        width: 270px;
+        height: 330px;
+        display: block;
+        position: relative;
+        margin: 0 15px;
+        &:first-child {
+          margin-left: 0;
+        };
+        &:last-child {
+          margin-right: 0;
+        };
+
+        .study_case {
+          width: 100%;
+          height: 100%;
+          //margin: 0 15px;
+          z-index: 3;
+          position: relative;
+          background-color: $light-blue;
+          //background-color: transparent;
+          overflow: hidden;
+          .study_case_text {
+            color: $white;
+            text-align: center;
+            font-size: 17px;
+            padding: 0 10px;
+            margin-top: 40px;
+          }
+          .study_logo {
+            position: absolute;
+            background: url("../img/header_logo.png") no-repeat;
+            bottom: -40px;
+            right: -60px;
+            width: 200px;
+            height: 200px;
+            opacity: .3;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            background-color: $blue;
+            z-index: -1;
+          }
+        }
+        &:before, &:after {
+          position: absolute;
+          content: "";
+          width: 50%;
+          height: 30%;
+          bottom: 5px;
+          left: 20px;
+          //right: auto;
+          border-radius: 30%;
+          box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.25);
+          transform: rotate(-5deg);
+        }
+        &:after {
+          transform: rotate(5deg);
+          right: 20px;
+          left: auto;
+        }
+      }
+    }
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+  .study {
+
+    .study_wraper {
+      max-width: 1200px;
+      background: url("../img/forwho_bg.png") top center no-repeat $light-grey;
+      background-size: 100%;
+
+      .study_title {
+
+        .study_title_p {
+
+          &:after {
+
+          }
+        }
+      }
+
+      .study_row {
+        max-width: 600px;
+
+        .study_block {
+          margin-bottom: 30px;
+          &:first-child {
+            margin-left: 15px;
+          };
+          &:last-child {
+            margin-right: 15px;
+          };
+
+          .study_case {
+
+            .study_case_text {
+
+            }
+            .study_logo {
+
+            }
+            &:after {
+
+            }
+          }
+          &:before, &:after {
+
+          }
+          &:after {
+
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 580px) {
+
+  .study {
+
+    .study_wraper {
+      max-width: 640px;
+
+      .study_title {
+        width: 450px;
+        height: 50px;
+        margin: 95px auto 0;
+        .study_title_p {
+          width: 450px;
+          height: 50px;
+          line-height: 56px;
+          font-size: 18px;
+          &:after {
+
+          }
+        }
+      }
+
+      .study_row {
+        max-width: 600px;
+
+        .study_block {
+          margin-bottom: 30px;
+          &:first-child {
+            margin-left: 15px;
+          };
+          &:last-child {
+            margin-right: 15px;
+          };
+
+          .study_case {
+
+            .study_case_text {
+
+            }
+            .study_logo {
+
+            }
+            &:after {
+
+            }
+          }
+          &:before, &:after {
+
+          }
+          &:after {
+
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 460px) {
+
+  .study {
+
+    .study_wraper {
+      max-width: 460px;
+
+      .study_title {
+        width: 300px;
+        height: 40px;
+        margin: 95px auto 0;
+        .study_title_p {
+          width: 300px;
+          height: 40px;
+          line-height: 46px;
+          font-size: 11px;
+          &:after {
+
+          }
+        }
+      }
+
+      .study_row {
+        max-width: 460px;
+
+        .study_block {
+          margin-bottom: 30px;
+          &:first-child {
+            margin-left: 15px;
+          };
+          &:last-child {
+            margin-right: 15px;
+          };
+
+          .study_case {
+
+            .study_case_text {
+
+            }
+            .study_logo {
+
+            }
+            &:after {
+
+            }
+          }
+          &:before, &:after {
+
+          }
+          &:after {
+
+          }
+        }
+      }
+    }
+  }
+
+}

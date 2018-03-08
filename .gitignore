@@ -1,0 +1,9 @@
+.idea
+node_modules
+bower_components
+dist
+#app
+#.gitignore
+#bower.json
+#gulpfile.js
+#package.json

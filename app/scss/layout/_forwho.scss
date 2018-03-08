@@ -1,0 +1,495 @@
+.forwho {
+  width: 100%;
+  //height: 600px;
+  height: auto;
+  position: relative;
+
+  .forwho_wraper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: url("../img/forwho_bg.png") top center no-repeat $light-grey;
+    max-width: 1920px;
+    margin: 0 auto;
+    //justify-content: center;
+
+    .forwho_title {
+      width: 350px;
+      height: 70px;
+      border: 3px solid $white;
+      margin: 90px auto 0;
+      .forwho_title_p {
+        text-align: center;
+        position: relative;
+        width: 350px;
+        height: 70px;
+        color: $grey;
+        line-height: 76px;
+        letter-spacing: 2px;
+        font-family: 'HelveticaNeueCyrRoman', sans-serif;
+        font-size: 22px;
+        text-transform: uppercase;
+        &:after {
+          content: "";
+          position: absolute;
+          left: -3px;
+          top: -3px;
+          width: 50%;
+          height: 100%;
+          background-color: transparent;
+          border: 3px solid $light-blue;
+          border-right: none;
+          z-index: 2;
+        }
+      }
+    }
+
+    .forwho_row {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 70px auto 100px;
+      justify-content: center;
+
+
+      .forwho_block {
+        display: block;
+        //margin: 70px auto 100px;
+        position: relative;
+
+        .forwho_case {
+          width: 356px;
+          height: 270px;
+          border: 7px solid white;
+          margin: 0 15px;
+          z-index: 3;
+          color: $white;
+          position: relative;
+          overflow: hidden;
+          .forwho_logo {
+            position: absolute;
+            background: url("../img/header_logo.png") no-repeat;
+            top: 110px;
+            right: -60px;
+            width: 200px;
+            height: 200px;
+            opacity: .3;
+          }
+          &.forwho_case_blue {
+            background-color: $light-blue;
+            &:after {
+              content: "";
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: 50%;
+              height: 100%;
+              background-color: $blue;
+              z-index: -1;
+            }
+          }
+          &.forwho_case_green {
+            background-color: $light-green;
+            &:after {
+              content: "";
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: 50%;
+              height: 100%;
+              background-color: $green;
+              z-index: -1;
+            }
+          }
+          &.forwho_case_orange {
+            background-color: $light-orange;
+            &:after {
+              content: "";
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: 50%;
+              height: 100%;
+              background-color: $orange;
+              z-index: -1;
+            }
+          }
+        }
+        &:before, &:after {
+          position: absolute;
+          content: "";
+          width: 50%;
+          height: 60%;
+          bottom: 0;
+          left: 25px;
+          border-radius: 50%;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+          transform: rotate(-10deg);
+        }
+        &:after {
+          transform: rotate(10deg);
+          right: 25px;
+          left: auto;
+        }
+
+        .forwho_case_header {
+          display: block;
+          width: 100%;
+          font-size: 22px;
+          text-align: center;
+          text-transform: uppercase;
+          margin: 40px 0 35px;
+          letter-spacing: 2px;
+        }
+
+        .forwho_case_text {
+          display: block;
+          font-size: 17px;
+          text-align: center;
+          margin: 0 auto;
+          padding: 0 33px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width : 1200px) {
+  .forwho {
+
+    .forwho_wraper {
+      max-width: 1280px;
+      background: url("../img/forwho_bg.png") top center no-repeat $light-grey;
+      background-size: contain;
+
+      .forwho_title {
+
+        .forwho_title_p {
+
+          &:after {
+
+          }
+        }
+      }
+
+      .forwho_row {
+
+        .forwho_block {
+
+          .forwho_case {
+            width: 290px;
+            height: 220px;
+            margin: 0 10px;
+            .forwho_logo {
+              background: url("../img/header_logo.png") no-repeat;
+              top: 100px;
+              right: 0;
+              width: 120px;
+              height: 120px;
+            }
+            &.forwho_case_blue {
+              &:after {
+              }
+            }
+            &.forwho_case_green {
+              &:after {
+              }
+            }
+            &.forwho_case_orange {
+              &:after {
+              }
+            }
+          }
+          &:before, &:after {
+            height: 60%;
+            bottom: 0;
+            left: 25px;
+            border-radius: 50%;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            transform: rotate(-10deg);
+          }
+          &:after {
+            transform: rotate(10deg);
+            right: 25px;
+            left: auto;
+          }
+
+          .forwho_case_header {
+            font-size: 18px;
+            margin: 30px 0 25px;
+          }
+
+          .forwho_case_text {
+            font-size: 14px;
+            margin: 0 auto;
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .forwho {
+
+    .forwho_wraper {
+      max-width: 1280px;
+
+      .forwho_title {
+
+        .forwho_title_p {
+
+          &:after {
+
+          }
+        }
+      }
+
+      .forwho_row {
+
+        .forwho_block {
+
+          .forwho_case {
+            width: 220px;
+            height: 180px;
+            margin: 0 5px;
+            .forwho_logo {
+              background: url("../img/header_logo.png") no-repeat;
+              background-size: 100%;
+              top: 90px;
+              right: -30px;
+              width: 100px;
+              height: 100px;
+            }
+            &.forwho_case_blue {
+              &:after {
+              }
+            }
+            &.forwho_case_green {
+              &:after {
+              }
+            }
+            &.forwho_case_orange {
+              &:after {
+              }
+            }
+          }
+          &:before, &:after {
+            height: 60%;
+            bottom: 0;
+            left: 25px;
+            border-radius: 50%;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            transform: rotate(-10deg);
+          }
+          &:after {
+            transform: rotate(10deg);
+            right: 25px;
+            left: auto;
+          }
+
+          .forwho_case_header {
+            font-size: 14px;
+            margin: 30px 0 20px;
+          }
+
+          .forwho_case_text {
+            font-size: 12px;
+            margin: 0 auto;
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width : 768px) {
+
+  .forwho {
+
+    .forwho_wraper {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      background: url("../img/forwho_bg.png") top center no-repeat $light-grey;
+      background-size: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+      //justify-content: center;
+
+      .forwho_title {
+
+        .forwho_title_p {
+
+          &:after {
+
+          }
+        }
+      }
+
+      .forwho_row {
+        flex-direction: column;
+        margin-top: 0;
+
+        .forwho_block {
+          margin-top: 70px;
+
+          .forwho_case {
+            width: 356px;
+            height: 270px;
+            margin: 0 15px;
+            .forwho_logo {
+              background: url("../img/header_logo.png") no-repeat;
+              top: 110px;
+              right: -60px;
+              width: 200px;
+              height: 200px;
+            }
+            &.forwho_case_blue {
+              &:after {
+              }
+            }
+            &.forwho_case_green {
+
+              &:after {
+
+              }
+            }
+            &.forwho_case_orange {
+
+              &:after {
+
+              }
+            }
+          }
+          &:before, &:after {
+            position: absolute;
+            content: "";
+            width: 50%;
+            height: 60%;
+            bottom: 0;
+            left: 25px;
+            border-radius: 50%;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            transform: rotate(-10deg);
+          }
+          &:after {
+            transform: rotate(10deg);
+            right: 25px;
+            left: auto;
+          }
+
+          .forwho_case_header {
+            font-size: 22px;
+            margin: 40px 0 35px;
+            letter-spacing: 2px;
+          }
+
+          .forwho_case_text {
+            font-size: 17px;
+            padding: 0 33px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width : 480px) {
+
+  .forwho {
+
+    .forwho_wraper {
+      max-width: 1280px;
+      background-size: contain;
+
+      .forwho_title {
+        width: 280px;
+        height: 50px;
+        .forwho_title_p {
+          width: 280px;
+          height: 50px;
+          line-height: 56px;
+          font-size: 18px;
+          &:after {
+
+          }
+        }
+      }
+
+      .forwho_row {
+
+        .forwho_block {
+
+          .forwho_case {
+            width: 290px;
+            height: 220px;
+            margin: 0 10px;
+            .forwho_logo {
+              top: 100px;
+              right: 0;
+              width: 120px;
+              height: 120px;
+            }
+            &.forwho_case_blue {
+              &:after {
+              }
+            }
+            &.forwho_case_green {
+              &:after {
+              }
+            }
+            &.forwho_case_orange {
+              &:after {
+              }
+            }
+          }
+          &:before, &:after {
+            height: 60%;
+            bottom: 0;
+            left: 25px;
+            border-radius: 50%;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            transform: rotate(-10deg);
+          }
+          &:after {
+            transform: rotate(10deg);
+            right: 25px;
+            left: auto;
+          }
+
+          .forwho_case_header {
+            font-size: 18px;
+            margin: 30px 0 25px;
+          }
+
+          .forwho_case_text {
+            font-size: 14px;
+            margin: 0 auto;
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+
+}
